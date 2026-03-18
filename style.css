@@ -167,6 +167,38 @@ background:rgba(255,255,255,0.15);
   margin-bottom: 30px;
 }
 
+/* Style de base pour l'iframe */
+.cv-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  height: 1000px; /* Taille sur PC */
+}
+
+.cv-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Ajustement spécial Mobile */
+@media (max-width: 768px) {
+  .cv-wrapper {
+    height: 500px; /* On réduit la hauteur du cadre sur téléphone */
+    position: relative;
+  }
+
+  .cv-wrapper iframe {
+    width: 160% !important;    /* On l'élargit virtuellement */
+    height: 160% !important;   /* On l'allonge virtuellement */
+    transform: scale(0.625);   /* On réduit l'ensemble (1 / 1.6) */
+    transform-origin: 0 0;     /* On cale la réduction en haut à gauche */
+  }
+}
+
 iframe {
   width: 100%;        
   max-width: 1000px;  
