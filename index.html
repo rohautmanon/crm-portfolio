@@ -157,7 +157,28 @@ content.style.display = "flex"
 })
 
 })
+  
+<!-- // Masquer les éléments hide-mobile sur mobile -->
+function hideOnMobile() {
+  const hideElements = document.querySelectorAll('.hide-mobile');
+  
+  if (window.innerWidth <= 767) {
+    hideElements.forEach(el => {
+      el.style.display = 'none';
+    });
+  } else {
+    hideElements.forEach(el => {
+      el.style.display = '';
+    });
+  }
+}
 
+<!-- // Appeler au chargement -->
+hideOnMobile();
+
+<!-- // Appeler quand on redimensionne la fenêtre -->
+window.addEventListener('resize', hideOnMobile);
+  
 </script>
 
   
