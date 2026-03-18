@@ -242,3 +242,11 @@ text-decoration:underline;
 footer a:hover{
 opacity:0.8;
 }
+
+/* MASQUER SUR MOBILE UNIQUEMENT */
+
+@media (max-width: 768px){
+.hide-mobile{
+display:none;
+}
+}
