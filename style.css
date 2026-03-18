@@ -245,14 +245,12 @@ opacity:0.8;
 
 /* MASQUER SUR MOBILE UNIQUEMENT */
 
+.hide-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .hide-mobile {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    width: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
+    display: none;
   }
-}
+
