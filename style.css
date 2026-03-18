@@ -245,12 +245,9 @@ opacity:0.8;
 
 /* MASQUER SUR MOBILE UNIQUEMENT */
 
-.hide-mobile {
-  display: none;
-}
-
 @media (max-width: 768px) {
   .hide-mobile {
     display: none;
   }
+}
 
